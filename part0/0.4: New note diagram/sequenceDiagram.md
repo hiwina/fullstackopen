@@ -6,7 +6,7 @@ sequenceDiagram;
 Title: User puts the input and clicks button 
 
 Browser->Server(new_inputs): HTTP POST
-Server-->Browser: Redirect with the status 302
+Server(new_inputs)-->Browser: Redirect with the status 302
 Browser->>Server: HTTP GET: Reloads
 Server-->Browser: HTML Document
 ```
