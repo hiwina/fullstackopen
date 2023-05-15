@@ -9,3 +9,9 @@ Server-->Browser: Redirect with the status 302
 Browser->>Server: HTTP GET: Reloads
 Server-->Browser: HTML Document
 ```
+
+
+sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+    Alice-)John: See you later!
