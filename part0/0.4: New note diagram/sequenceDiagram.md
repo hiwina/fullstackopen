@@ -1,9 +1,9 @@
-Here is a simple flow chart:
+After a user puts the input and clicks button 
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
+    Browser-->Server;
+    Server-->Browser;
     B-->D;
     C-->D;
 ```
