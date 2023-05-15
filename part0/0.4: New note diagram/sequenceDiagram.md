@@ -10,9 +10,10 @@ Server-->Browser: Redirect with the status 302
 Browser->>Server: HTTP GET: Reloads
 Server-->Browser: HTML Document
 ```
-
 ```mermaid
-sequenceDiagram;
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-    Alice-)John: See you later!
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
