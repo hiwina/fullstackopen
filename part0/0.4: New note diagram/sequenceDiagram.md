@@ -5,8 +5,15 @@ After a user puts the input and clicks button
 sequenceDiagram;
 Title: User puts the input and clicks button 
 
-Browser->Server(new_inputs): HTTP POST
-Server(new_inputs)-->Browser: Redirect with the status 302
+Browser->Server: HTTP POST
+Server-->Browser: Redirect with the status 302
 Browser->>Server: HTTP GET: Reloads
 Server-->Browser: HTML Document
+Browser-->Server: GET: main.css
+Server-->Browser: main.css
+Browser-->Server: GET: main.js
+Server-->Browser: main.ls
+Browser-->Server: GET: data.json
+Server-->Browser: content
+
 ```
